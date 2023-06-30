@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebAuthn testing...</title>
+    <script type="module" crossorigin src="/assets/index-e91a61a7.js"></script>
+    <link rel="stylesheet" href="/assets/index-533bdc65.css">
+  </head>
+  <body>
+    <div id="app">
+      <h1>WebAuthn Demo</h1>
+
+      <div class="actions">
+        <button id="webauthn-register">
+          <svg
+            class="w-[16px] h-[16px] text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 18 20"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1"
+              d="M4 4H1m3 4H1m3 4H1m3 4H1m6.071.286a3.429 3.429 0 1 1 6.858 0M4 1h12a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1Zm9 6.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"
+            />
+          </svg>
+          <span>Register</span>
+        </button>
+        <button id="webauthn-authenticate">
+          <svg
+            class="w-[16px] h-[16px] text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 18 16"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1"
+              d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"
+            />
+          </svg>
+          <span>Authenticate</span>
+        </button>
+      </div>
+
+      <div id="log"></div>
+
+      <label for="output">Output</label>
+      <small>Data from register/authenticate actions will appear here...</small>
+      <div id="output" readonly></div>
+    </div>
+
+    
+  </body>
+</html>
