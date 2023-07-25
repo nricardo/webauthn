@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebAuthn testing...</title>
-    <script type="module" crossorigin src="/webauthn/assets/index-17790a1d.js"></script>
-    <link rel="stylesheet" href="/webauthn/assets/index-c1fc2e05.css">
+    <script type="module" crossorigin src="/webauthn/assets/index-1b621f97.js"></script>
+    <link rel="stylesheet" href="/webauthn/assets/index-53ab4283.css">
   </head>
   <body>
     <div id="app">
@@ -14,11 +14,12 @@
       <div class="actions">
         <button id="webauthn-register">
           <svg
-            class="w-[16px] h-[16px] text-gray-800 dark:text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 18 20"
+            width="18"
+            height="18"
           >
             <path
               stroke="currentColor"
@@ -32,11 +33,12 @@
         </button>
         <button id="webauthn-authenticate">
           <svg
-            class="w-[16px] h-[16px] text-gray-800 dark:text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 18 16"
+            width="18"
+            height="18"
           >
             <path
               stroke="currentColor"
@@ -52,8 +54,20 @@
 
       <div id="log"></div>
 
-      <label for="output">Output</label>
-      <small>Data from register/authenticate actions will appear here...</small>
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        "
+      >
+        <div>
+          <h4 style="margin: 0">Output</h4>
+          <small
+            >Data from register/authenticate actions will appear here...</small
+          >
+        </div>
+      </div>
       <div id="output" readonly></div>
     </div>
 
